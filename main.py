@@ -12,6 +12,8 @@ bscscan_api_key = "<API KEY FOR BSCSCAN>"
 cmc_api_key = "<COINMARKETCAP API KEY>"
 
 charitas_balance_url = "https://api.bscscan.com/api?module=account&action=tokenbalance&contractaddress={0}&address={1}&tag=latest&apikey={2}".format(char_contract, char_wallet, bscscan_api_key)
+
+# you will need to play with these division as different tokens required different conversions
 charitas_balance = (float)(requests.get(charitas_balance_url).json()["result"]) / 1000000000000000000
 
 charitas_prices_url = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?CMC_PRO_API_KEY={}&symbol=CHAR".format(cmc_api_key)
