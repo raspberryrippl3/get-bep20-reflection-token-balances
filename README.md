@@ -9,4 +9,4 @@ This simple script will do this in a CSV file, as well as log wallet value, over
 1. BSCscan to get your current wallet balance
 2. CoinMarketCap API to get the latets quote price in USD
 
-There are rate limits on these APIs. I have three scripts running via CRON every 5 minutes on an always on Raspberry PI Zero
+There are rate limits on these APIs. I have three scripts running via CRON every 30 minutes on an always on Raspberry PI Zero
